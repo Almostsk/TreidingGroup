@@ -1,0 +1,80 @@
+.service-box
+	border: 1px solid $lighterGrey
+	padding-left: 0
+	padding-right: 0
+	height: 450px
+	+transition($default-transition)
+	&:hover h2
+		color: #fff
+		+transition($default-transition)
+	&:hover .text-box
+		background-color: $blue
+		color: #fff
+		cursor: pointer
+		+transition($ease-transition)
+	&:hover .service-more
+		background-color: #136687
+		button
+			color: #fff	
+	&:hover .service-more:after
+		left: 81%
+		+transition($default-transition)
+		transition-delay: .4s
+	&:hover .service-more .fa
+		display: none
+
+
+.service-img
+	height: 225px
+	width: 100%
+	background-size: cover
+.service-1
+	background-image: url(../img/product1.jpg)	
+.service-2
+	background-image: url(../img/product2.jpg)
+.service-3
+	background-image: url(../img/product3.jpg)
+.service-4
+	background-image: url(../img/product4.png)
+.service-5
+	background-image: url(../img/product5.jpeg)
+.service-6	
+	background-image: url(../img/product6.jpg)
+.service-more
+	height: 50px
+	position: absolute
+	bottom: 0
+	width: 100%
+	overflow: hidden
+	button
+		height: 50px
+		box-sizing: border-box
+		width: 70%
+		font-family: $baseFontBold
+		font-size: 1.3rem
+		background-color: transparent
+		cursor: pointer
+		color: $blue
+	&:after
+		content: '\2192'
+		font-size: 30px
+		+display-flex
+		justify-content: center
+		align-items: center
+		box-sizing: border-box
+		width: 20%
+		height: 50px
+		position: absolute
+		top: 0
+		left: 101%
+		background-color: $base-active-color
+		border-radius: 30px 0 0 30px 
+		z-index: 0
+				
+.service-text
+	font-family: $baseFont
+.text-box
+	height: 175px
+	width: 100%	
+	padding-top: 2rem
+			

@@ -1,0 +1,28 @@
+{
+  "name": "newtemplate",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Alexey <rudychalexey@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "gulp-minificator/node_modules",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "fancybox": "^3.1.20",
+    "font-awesome": "^4.7.0",
+    "bootstrap-grid-only": "^1.0.0",
+    "normalize-css": "^7.0.0",
+    "slick-carousel": "^1.8.0",
+    "wow": "wowjs#^1.1.2",
+    "jquery-migrate": "^3.0.0"
+  }
+}

@@ -1,0 +1,64 @@
+.content
+	background-color: #fff
+.banner
+	img
+		width: 100%
+		height: auto
+.product-slider
+	width: 60%
+	margin: 2rem auto		
+.product-slider-img
+	img
+		height: 400px
+		width: 100%	
+.product-slider-nav
+	.slick-prev, .slick-next
+		height: 100%
+		background-color: $base-bg			
+.product-slider-nav-img
+	width: 33%
+	margin: 0 15px
+	border: 1px solid
+	img
+		width: 100%	
+		height: 200px	
+.product-info
+	border-top: 2px solid
+	border-bottom: 2px solid
+.product-button
+	+display-flex
+	justify-content: center
+	button
+		+button($text-color, $base-bg, $base-active-color)			
+		height: 50px
+		width: 40%
+		font-family: $baseFontMedium
+		font-size: 1.5rem
+		&:hover
+			color: $base-color
+.product-info
+	p
+		font-family: $baseFont
+		font-size: 1.3rem	
+		line-height: 2rem	
+.contact-client
+	border: 2px solid black
+	height: 100px
+	padding: 1rem
+	position: relative
+	margin-bottom: 4.5rem
+.client-btn
+	width: 30%	
+	margin: 0 auto	
+	position: absolute
+	left: 35%
+	bottom: -25px
+	background-color: #fff
+	button
+		margin: 0 auto
+		+button($text-color, $base-bg, $base-active-color)
+		height: auto
+		border: 2px solid $base-active-color
+		font-family: $baseFontBold
+		width: 90%	
+		height: 50px	

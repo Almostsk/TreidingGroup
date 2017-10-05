@@ -1,0 +1,81 @@
+
+=after($top-af, $left-af, $width-af, $height-af)
+	content: ''
+	position: absolute
+	top: $top-af
+	left: $left-af
+	width: $width-af
+	height: $height-af
+	z-index: -1
+
+=position($pos-var, $pos-top, $pos-left)
+	position: $pos-var
+	top: $pos-top
+	left: $pos-left
+
+=text-align($ta-var)
+	text-align: $ta-var
+
+=display-flex()
+	display: flex
+	flex-wrap: wrap
+
+=font($font-ff, $font-s, $font-h)
+	font-family: $font-ff
+	font-size: $font-s
+	line-height: $font-h
+
+=font-h($font-ff, $font-s1, $font-s2, $font-h)
+	font-family: $font-ff
+	font-size: $font-s1
+	font-size: $font-s2
+	line-height: $font-h
+
+
+=letter-spacing($letter-spacing)
+	letter-spacing: $letter-spacing
+
+=transition($default-transition)
+	transition: $default-transition
+
+=border-radius($default-border-radius)
+	border-radius: $default-border-radius
+
+=rotate($rotate)
+	transform: rotate($rotate)
+
+=scale($scale)
+	transform: scale($scale)
+
+=gradient($aside-invert, $color1, $color2)
+	background: linear-gradient(to $aside-invert, $color1 0%, $color2 100%)
+
+=box-shadow($shadow)
+	box-shadow: ($shadow)
+
+=border($border-w, $border-s, $border-c)
+	border: $border-w $border-s $border-c
+
+=button($button-color, $button-bgc, $button-af-color)
+	+position(relative, 0, 0)
+	border-radius: $button-radius
+	vertical-align: top
+	display: flex
+	justify-content: center
+	align-items: center
+	background-color: $button-bgc
+	overflow: hidden
+	z-index: 1
+	cursor: pointer
+	color: $button-color
+	&:after
+		+after(-100%, 0, 100%, 100%)
+		+transition($default-transition)
+		background-color: $button-af-color
+		z-index: -1
+	&:hover
+		&:after
+			top: 0
+=filter
+	-webkit-filter: grayscale(100%)
+	filter: grayscale(100%)

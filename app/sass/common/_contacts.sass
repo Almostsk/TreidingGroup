@@ -1,0 +1,60 @@
+.map
+	position: relative
+.map-container
+	position: relative	
+.container-form
+	position: absolute
+	top: 25%
+	left: 10%
+	width: 25%
+.contact-form
+	i
+		color: $base-active-color
+		font-size: 1.5rem
+	background-color: #fff
+	padding: 30px 40px
+	box-shadow: 0 0 20px rgba(0,0,0,.5)
+	h2
+		font-family: $baseFontLight
+		font-size: 2rem
+	table
+		width: 100%
+		tr
+			height: 3rem
+.contact-btn
+	border: 1px solid $base-active-color
+	padding: 15px 10px	
+	position: relative
+	overflow: hidden
+	background-color: transparent
+	+display-flex
+	justify-content: center
+	align-items: center
+	font-family: $baseFontBold
+	-webkit-transition: all 1s ease
+	-moz-transition: all 1s ease
+	-o-transition: all 1s ease
+	transition: all 1s ease
+	span
+		z-index: 10
+		height: 100%
+		+display-flex
+		align-items: center
+	&:after
+		content: ""
+		position: absolute
+		height: 0%
+		left: 50%
+		top: 50%
+		width: 150%
+		z-index: 1
+		+transition($ease-transition)
+		opacity: 0
+		background-image: -webkit-linear-gradient( transparent 50%, rgba(255,205,0,0.2) 50%)
+		background-size: 10px 10px
+		transform: translateX(-50%) translateY(-50%) rotate(25deg)
+	:hover
+		color: #fff
+	&:hover:after
+		height: 400%
+		opacity: 1	

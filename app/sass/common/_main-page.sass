@@ -1,0 +1,269 @@
+html, body
+	font-size: 15px
+	font-family: $baseFont
+	overflow-x: hidden
+.go-top
+	position: fixed
+	bottom: 25px
+	right: 15px
+	cursor: pointer
+	z-index: 5000
+	width: 85px
+	height: 55px
+	display: none
+	background-image: url(../img/go-top.png)
+
+.content
+	height: auto
+	background-color: $grey
+.section-title
+	font-family: $baseFontBold
+	font-size: 2rem
+	margin-top: 3rem
+	margin-bottom: 3rem	
+.advantages
+	border-bottom: 1px solid #e8e8e8	
+.advan-box
+	border-left: 1px solid #e8e8e8
+	height: 250px
+	img
+		border-radius: 20%
+.product-box
+	padding: 0
+	border: 1px solid $lighterGrey
+	height: 400px
+	position: relative
+	&:hover
+		cursor: pointer
+		+transition($default-transition)
+		.product-text
+			background-color: $blue
+			+transition($default-transition)	
+			h3
+				color: #fff	
+				+transition($default-transition)
+		.product-buy
+			background-color: #136687
+			+transition($default-transition)
+			span
+				color: #fff
+				+transition($default-transition)
+			.fa
+				display: none
+			&:after
+				left: 81%	
+				+transition($default-transition)	
+
+.product-buy
+	height: 50px
+	+display-flex
+	align-items: center
+	justify-content: space-between
+	padding-left: 10px 
+	background-color: #fff
+	color: #fff
+	position: absolute
+	bottom: 0
+	width: 100%
+	overflow: hidden
+	&:after
+		content: '\2192'
+		font-size: 30px
+		+display-flex
+		justify-content: center
+		align-items: center
+		box-sizing: border-box
+		width: 20%
+		height: 50px
+		position: absolute
+		top: 0
+		left: 101%
+		background-color: $base-active-color
+		border-radius: 30px 0 0 30px 
+		z-index: 0		
+	
+.product-text
+	height: 125px
+	+display-flex
+	align-items: center
+	justify-content: center
+.price
+	color: $blue
+	font-size: 1.2rem
+	font-weight: 600
+	.fa
+		margin-left: 15px
+.advantages-section
+	padding-bottom: 3rem
+	color: $white
+	background: url(../img/advantages-background-blue.jpg)
+	img
+		width: 100%
+		height: 200px
+	h3, h4, h2
+		color: $white			
+.adv-sec-img-container
+	+display-flex
+	align-items: center
+	&:hover
+		transform: scale(1.05)
+		+transition($default-transition)
+.adv-sec-img-text
+	border: 5px solid rgba(0,0,0,.2)
+	padding: 20px 
+.client-request
+	background: url(../img/bg-contact.png) no-repeat
+	background-size: cover				
+.clients
+	padding-bottom: 30px
+	// background: url(../img/deal-background.jpg)
+	// background-size: cover
+	// background-position: 50% 50%
+.clients-info
+	color: #fff
+	h2
+		color: #fff	
+.clients-slider
+	.slider-client
+		height: 150px
+		width: 150px
+		background-color: $white
+		margin: 20px
+		display: table-cell
+		vertical-align: middle
+		a
+			height: 100%
+			+display-flex
+			align-items: center
+			justify-content: center
+			img
+				width: auto	
+				height: 70%
+				+filter
+				&:hover
+					filter: none
+					+transition($default-transition)
+						
+				
+	// background: url(../img/bg-contact.png) no-repeat
+	// background-size: cover
+	margin-left: 0
+	margin-right: 0
+.request-form
+	border: 3px solid rgba(0,0,0,.3)
+	color: #fff
+	font-size: 1.5rem
+	line-height: 2rem
+	padding: 0
+	table
+		border-collapse: collapse
+		td
+			padding: 30px
+			background-color: rgba(0,0,0,.3)
+		th
+			padding: 30px
+			width: 30%	
+			background-color: transparent
+			a
+				color: #fff
+				+transition($default-transition)	
+				&:hover
+					color: $base-active-color	
+					+transition($default-transition)
+.modalDialog
+	position: fixed
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	background-color: rgba(0,0,0, .7)
+	z-index: 1000
+	transition: opacity .4s ease-in
+	display: none
+	pointer-events: none
+	+transition($default-transition)
+	&:target
+		display: block
+		pointer-events: auto
+		+transition($default-transition)
+
+
+	form
+		width: 380px
+		margin: 4rem auto
+		padding: 3rem 2rem 2rem 2rem
+		background-color: #fafafa
+		border: 1px solid #ebebeb
+		box-shadow: rgba(0,0,0,.15)
+		.group
+			position: relative
+			margin-bottom: 45px
+		input
+			font-size: 1.5rem
+			padding: 10px 10px 10px 5px
+			-webkit-apperance: none
+			display: block
+			background-color: #fafafa
+			color: #636363
+			width: 100%
+			border: none
+			border-radius: none
+			border-bottom: 1px solid #757575
+			&:focus
+				outline: none
+				border-bottom: 2px solid $base-active-color
+			&:focus~label
+				top: -20px
+				-webkit-transform: scale(.75)
+				transform: scale(.75)
+				left: -2px			
+		label
+			color: #999
+			font-size: 1.5rem
+			position: absolute
+			pointer-events: none
+			left: 5px
+			top: 10px
+			-webkit-transition: all .2s ease
+			transition: all .2s ease
+		.modal-buttons
+			+display-flex
+			justify-content: space-around	
+		.button
+			position: relative
+			display: inline-block
+			padding: 12px 24px
+			margin: .3rem 0 1rem 0
+			width: 40%
+			vertical-align: middle
+			color: #fff
+			text-align: center
+			letter-spacing: 1px
+			background: transparent
+			border: 0
+			cursor: pointer
+			+transition($ease-transition)
+			&:focus
+				outline: none
+		.buttonBlue
+			background: #4a89dc
+			text-shadow: 1px 1px 0 rgba(39, 110, 204, .5)
+			border-bottom: 2px solid #3160b6	
+			&:hover
+				background: #357bd8
+		.buttonRed
+			background: #e20d0d
+			text-shadow: 1px 1px 0 rgba(39, 110, 204, .5)
+			border-bottom: 2px solid #a50606	
+			&:hover
+				background: #e80909	
+			a
+				color: #fff		
+
+				
+
+.index-map
+	height: 500px
+	width: auto	
+	margin-left: 0
+	margin-right: 0			

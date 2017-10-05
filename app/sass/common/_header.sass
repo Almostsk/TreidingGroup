@@ -1,0 +1,186 @@
+.header
+	background-color: $white
+	height: auto
+	+display-flex
+	align-items: center
+	input 
+		height: 1.2em
+	input[name="q"] 
+		padding-right: 1.8em
+	input[type="image"] 
+		left: -1.8em
+		position: relative
+		vertical-align: middle
+		width: 1.2em
+	.logo
+		a
+			width: 100%
+			img
+				width: 100%	
+	.phone-numbers
+		font-size: 1.3rem
+		font-family: $baseFontBold		
+	.call-back
+		margin-top: .5rem
+		a
+			color: $blue
+			span
+				color: $blue
+			&:hover
+				color: $base-active-color
+				+transition($default-transition)
+			i
+				font-size: 1.2rem
+				margin-right: 5px	
+.header-menu
+	height: 60px
+	background-color: $blue
+	+display-flex
+	align-items: center
+	position: fixed
+	top: 90.5px
+	z-index: 9999
+	.container
+		height: 100%
+	.row
+		height: 100%
+	ul
+		height: 100%
+		+display-flex
+		justify-content: space-between
+		&:last-child
+			border-right: 1px dotted rgba(255,255,255,.3)
+		li
+			display: inline
+			border-left: 1px dotted rgba(255,255,255,.3)
+			width: calc(100%/6)
+			height: 100%
+			a
+				height: 100%
+				width: 100%
+				+display-flex
+				justify-content: center
+				align-items: center
+				color: $white
+				text-transform: uppercase
+				font-family: $baseFontBold
+				&:hover
+					background-color: rgba(0,0,0,.1)
+					transition: all .5s
+.slider-box
+	padding-left: 0
+	padding-right: 0
+	margin-top: 60px				
+.slider
+	.slider-box1
+		background-image: url(../img/slide1.jpg)
+		background-size: cover
+		background-repeat: no-repeat
+	.slider-box2
+		background-image: url(../img/slide2.jpg)
+		background-size: cover
+		background-repeat: no-repeat
+	.slider-box3	
+		background-image: url(../img/slide3.jpg)
+		background-size: cover
+		background-repeat: no-repeat
+	.slide
+		position: relative
+		height: 500px
+		.slider-1, .slider-2, .slider-3
+			margin: 0 auto
+			width: 100%
+			height: 100%
+			+display-flex
+			justify-content: center
+			align-items: center
+			.slider-content
+				color: #fff
+				width: 60%
+				height: 50%
+				+display-flex
+				justify-content: center
+				align-items: center
+				.slide-title
+					font-size: 2rem
+					font-weight: 600
+					color: #fff
+					width: 100%
+					text-align: center
+				.slide-button		
+					height: 50px
+					width: 25%
+					margin-left: 10px
+					margin-right: 10px
+					font-family: $baseFontMedium
+					font-size: 1.2rem
+					border-radius: 30px
+					+display-flex
+					align-items: center
+					justify-content: center
+					background-color: #fff
+					color: $blue
+					&:hover
+						color: #fff
+						background-color: $blue
+						+transition($default-transition)
+						border: 1px solid $blue
+				.slide-button-more
+					background-color: transparent
+					border: 1px solid #fff
+					color: #fff		
+
+	.fa-long-arrow-left, .fa-long-arrow-right
+		color: #fff
+		background-color: $blue
+		cursor: pointer
+		font-size: 30px
+		position: absolute
+		z-index: 1000
+		top: 45%
+		padding: 5px
+		border-radius: 50%
+		&:hover
+			color: $base-active-color
+			+transition($default-transition)
+	.fa-long-arrow-left
+		left: 5%
+	.fa-long-arrow-right
+		right: 5%
+	.slider-1
+		z-index: 1000
+		position: absolute
+		width: 100%
+		height: 100%				
+.search-container
+	+display-flex
+	align-items: center
+	height: 60px		
+.search-form
+	width: 100%
+	border-bottom: 1px solid #ccc
+	position: relative
+	padding: 5px 
+	input
+		border: none
+	.input
+		width: 100%
+		box-sizing: border-box
+		font-family: $baseFont
+		outline: none
+		border: none
+	.submit
+		position: absolute
+		top: 0
+		right: 0
+		height: 100%
+		width: 25px
+		cursor: pointer
+		background: url(https://lh4.googleusercontent.com/-b-5aBxcxarY/UAfFW9lVyjI/AAAAAAAABUg/gQtEXuPuIds/s13/go.png) 50% no-repeat
+		background-size: 50%
+		opacity: 1
+
+		&:hover
+			opacity: .5
+
+

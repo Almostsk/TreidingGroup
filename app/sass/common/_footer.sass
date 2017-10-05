@@ -1,0 +1,58 @@
+.footer
+	padding-top: .5rem
+	padding-bottom: .5rem
+	background-color: #202020
+	height: auto
+	color: #fff
+	.menu-bottom
+		font-size: .9rem
+		margin-top: .3rem
+		a:hover
+			color: $blue
+			+transition($ease-transition)
+	.row
+		+display-flex
+		justify-content: center
+		flex-direction: row
+		align-items: center
+	img
+		height: 40px
+		-webkit-filter: grayscale(100%) brightness(80%)
+	ul
+		+display-flex
+		justify-content: space-around
+		li
+			display: inline
+			a
+				color: $white
+				text-decoration: underline
+	.contacts-footer
+		.phone-numbers
+			width: auto
+			font-family: $baseFontBold
+			font-weight: 700
+			font-size: 1.5rem
+			position: relative
+		.call-back-footer
+		a
+			color: #fff
+			text-decoration: underline
+			&:hover
+				color: $blue
+				+transition($default-transition)
+			i
+				font-size: 1.2rem
+				margin-right: 5px							
+.social
+	+display-flex
+	font-size: 25px
+	justify-content: space-around
+	a
+		padding: 10px
+		color: $white
+		border: 1px solid #fff
+		&:hover
+			color: $blue
+			background-color: #fff
+			+transition($default-transition)
+	

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta charset="[[++modx_charset]]"/> -->
+    <title>Tradeingroup - Стрейч пленка для вас</title>
+    <!-- <title>[[!pdoTitle? &titleField=`[[*titl]]`]] / [[++site_name]]</title> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <!-- <meta name="description" content="[[*desc]]"/>
+    [[*keyw:notempty=`<meta name="keywords" content="[[*keyw]]"/>`]]
+    <meta name="author" content="[[++site_name]]"/>
+    <base href="[[++site_url]]"/> -->
+    <!-- <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"> -->
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <!-- build:css build/app/css/vendor.min.css -->
+    <link rel="stylesheet" href="app/bower_components/bootstrap-grid-only/css/grid12.css" />
+    <link rel="stylesheet" href="app/bower_components/normalize-css/normalize.css" />
+    <link rel="stylesheet" href="app/bower_components/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="app/bower_components/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" href="app/bower_components/slick-carousel/slick/slick-theme.css">
+    <link rel="stylesheet" href="app/bower_components/fancybox/dist/jquery.fancybox.min.css" />
+    <!-- endbuild -->
+    <!-- build:css build/app/css/main.min.css -->
+    <link rel="stylesheet" href="app/css/stylesheet.css">
+    <!-- endbuild -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+    .loaded .header,
+    .loaded .content,
+    .loaded .footer {
+        visibility: hidden;
+    }
+
+    .icon-load {
+        background: url(app/img/loader.gif) no-repeat left top;
+        width: 40px;
+        height: 40px;
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        margin-left: -20px;
+        z-index: 9999;
+        display: none;
+    }
+
+    .loaded .icon-load {
+        display: block;
+    }
+    </style>
+</head>
+
+<body class="loaded">
+    <header class="header">
+        <div class="container">
+            <div class="row margin-top-1rem margin-bottom-1rem">
+                <div class="col-md-3 logo"> <a href="index.html"><img src="app/img/logo.png" alt="Tradeingroup"></a></div>
+                <div class="col-md-3">
+                    <div>
+                        Ежедневно с 9:00 до 21:00
+                        <br> г.Киев, ул.Северо-Сырецкая, 1-3
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="phone-numbers">
+                        <span>
+                        (044) 200-38-48 / (067) 536-92-70
+                    </span>
+                    </div>
+                    <div class="call-back">
+                        <a href="#openModal">
+                        <i class="fa fa-phone" aria-hidden="true"></i>Заказать звонок
+                    </a>
+                    </div>
+                </div>
+                <div class="col-md-2 search-container">
+                    <div class="search-form">
+                        <form action="" method="post" class="search">
+                            <input type="search" name="" placeholder="Поиск по сайту.." class="input">
+                            <input type="submit" name="" value="" class="submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-menu col-xs-12">
+            <div class="container">
+                <div class="row">
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="Product.html">Продукция</a></li>
+                        <li><a href="About.html">О компании</a></li>
+                        <li><a href="Service.html">Услуги</a></li>
+                        <li><a href="Articles.html">Статьи</a></li>
+                        <li><a href="Contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="content">
+        <div class="container">
+            <div class="row">
+                <div class="banner col-xs-12 margin-top-2rem">
+                    <img src="app/img/baner-big.png" alt="">
+                </div>
+            </div>
+            <div class="row margin-top-3rem">
+                <div class="product-list text-center">
+                    <h3>Хотите купить стрейч пленку? Наша компания производит следующие виды продуктов:</h3>
+                    <div class="product-slider">
+                        <div class="product-slider-img"><img src="app/img/product1.jpg" alt=""></div>
+                        <div class="product-slider-img"><img src="app/img/product2.jpg" alt=""></div>
+                        <div class="product-slider-img"><img src="app/img/product3.jpg" alt=""></div>
+                        <div class="product-slider-img"><img src="app/img/product4.png" alt=""></div>
+                        <div class="product-slider-img"><img src="app/img/product5.jpeg" alt=""></div>
+                        <div class="product-slider-img"><img src="app/img/product6.jpg" alt=""></div>
+                    </div>
+                    <div class="product-slider-nav">
+                        <div class="product-slider-nav-img"><img src="app/img/product1.jpg" alt=""></div>
+                        <div class="product-slider-nav-img"><img src="app/img/product2.jpg" alt=""></div>
+                        <div class="product-slider-nav-img"><img src="app/img/product3.jpg" alt=""></div>
+                        <div class="product-slider-nav-img"><img src="app/img/product4.png" alt=""></div>
+                        <div class="product-slider-nav-img"><img src="app/img/product5.jpeg" alt=""></div>
+                        <div class="product-slider-nav-img"><img src="app/img/product6.jpg" alt=""></div>
+                    </div>
+                </div>
+                <div class="product-button margin-top-2rem">
+                    <button>Заказать товар сейчас</button>
+                </div>
+            </div>
+            <div class="row margin-top-3rem">
+                <div class="product-info">
+                    <div class="margin-top-1rem text-center">
+                        <p><b>Стрейч пленка может растягиваться до 400% и более в длину,</b> при этом не образуя разрывов. На уровень растяжения влияет количество престрейча. Упаковывая товары, стрейч пленку растягиваютдо предельного растяжения. Приобретая исходный размер, пленка надежно фиксирует и гарантирует герметичность. стрейч пленка (Киев) незаменима практически во всех сферах производства, хранении предметов, транспортировке товаров и ремонтах.</p>
+                        <p> Скотч (клейкая лента) имеет клеевое покрытие, обеспечивающее прилипание пленки к поверхностям. Имеет широкое использование на производстве и в домашних условиях. Продается в рулонах с наружной неклеевой стороной, а иногда – с липучими двумя сторонами для склеивания вместе нескольких предметов.</p>
+                        <p>С увеличением популярности Интернет-продаж и пересылки товаров на большие расстояния, стрейч пленка является все более популярным упаковочным материалом. Будучи изготовленной из линейного полиэтилена низкой плотности, стрейтч пленка прочно закрепляет отдельные предметы в упаковке.</p>
+                        <p>При растяжении пленки она может увеличиваться до 4 раз. Престрейч очень важен при обмотке, поскольку, приобретая начальные размеры, стрейтч пленка удерживает и плотно скрепляет груз. При обмотке слои прилипают, что позволяет герметично упаковать самые нежные единицы товаров.</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="app/img/product.jpg" alt="">
+                    </div>
+                    <div class="text-center margin-bottom-2rem">
+                        <h3>Преимущества стрейч пленки</h3>
+                        <p>Вы уже убедились, что не найти более прочного материала, чем стрейч пленка. Купить ее означает обеспечить себя: - Прочной и надежной фиксацией товаров; - Контролем состояния товара, благодаря прозрачности пленки; - Стойкостью к проколам; - Экономный и рационально используемый материал; - Герметичности упаковки; - Обеспечением чистоты товаров.</p>
+                        <p><b>Стрейч пленка бывает ручной и машинной намотки. </b>Первая используется для ручной упаковки товаров в небольших объемах без дополнительного оборудования. Рулоны весят в среднем 1-3 кг нетто с толщиной 10-25 мкм и шириной 100, 250 и 500 мм.</p>
+                        <p> Ее используют не только в рабочих целях, но и при переездах, для упаковки продуктов питания, для хранения личных вещей, и в других целях. Купить стреч пленку легко и просто.</p>
+                        <p> Машинная же пленка наматывается паллетайзерами и используется в промышленных масштабах. Ее продажа осуществляется в спецификациях Regular, Power i SuperPower. Они различаются показателями предварительного растяжения, а также толщиной стрейч пленки. Стоит помнить, что чем выше способность к растяжению, тем стрейч пленка цена дороже.</p>
+                        <p> Стрейч пленка: купить в индивидуальном порядке. Выбирая пленку, рекомендуется согласно следующим параметрам: Толщина; Ширина рулона; Длина намотки; Вес втулки; Вес нетто роля.</p>
+                        <p><b> Вам нужна высококачественная стрейч пленка?</b> Купить ее вы можете в Трейд Интер Групп – компании, специализирующейся на упаковочных материалах. Наши консультанты помогут рассчитать необходимое количество и подобрать нужный вам товар. Закажите стрейч пленку в Киеве и обеспечьте надежную защиту и хранение ваших товаров, и бытовых предметов.</p>
+                        <p> Рулоны весят в среднем 1-3 кг нетто с толщиной 10-25 мкм и шириной 100, 250 и 500 мм.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="contact-client margin-top-3rem text-center">
+                    <h2>Компания “Трейд Интер Групп” — ваш надежный производитель стрейча и скотча.</h2>
+                    <div class="client-btn">
+                        <button>Стать клиентом компании</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<footer class="footer">
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="col-xs-12"><a href="index.html"><img src="app/img/logo.png" alt="Tradeingroup"></a></div>
+                        <div class="col-xs-12 margin-top-1rem">2017© ООО "Трейд Интер Групп" - Работаем для Вас</div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="menu-bottom">
+                            <ul class="text-center">
+                                <li><a href="Product.html" style="color: rgba(0,0,0,.7); text-decoration: none;">Продукция</a></li>
+                                <li><a href="About.html">О компании</a></li>
+                                <li><a href="Service.html">Услуги</a></li>
+                                <li><a href="Articles.html">Статьи</a></li>
+                                <li><a href="Contacts.html">Контакты</a></li>
+                            </ul>
+                        </div>
+                        <div class="contacts-footer margin-top-2rem col-xs-11 col-xs-offset-1">
+                            <div class="phone-numbers">(044) 200-38-48 / (067) 536-92-70</div>
+                            <div class="call-back-footer margin-top-1rem">
+                                <a href="#">
+                        <i class="fa fa-phone" aria-hidden="true"></i><span>Заказать звонок</span>
+                    </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 social text-center">
+                        <a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-google-plus-official" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-vk" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="application/ld+json">
+    {
+        "@context": "[[++site_url]]",
+        "@type": "WebSite",
+        "url": "[[++site_url]]",
+        "name": "Site type - [[++site_name]]",
+        "alternateName": "[[++site_name]]",
+        "contactPoint": [{
+            "@type": "ContactPoint",
+            "telephone": "yourphone",
+            "contactType": "customer service"
+        }],
+        "potentialAction": [{
+            "@type": "SearchAction",
+            "target": "[[++site_url]]search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }],
+        "sameAs": [
+            "https://www.facebook.com/yourprofile",
+            "https://www.instagram.com/yourprofile",
+            "http://www.linkedin.com/in/yourprofile",
+            "https://plus.google.com/yourprofile"
+        ]
+    }
+    </script>
+    <div class="icon-load"></div>
+    <!-- build:js build/app/js/vendor.min.js -->
+    <script type="text/javascript" src="app/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="app/bower_components/jquery-migrate/jquery-migrate.min.js"></script>
+    <script type="text/javascript" src="app/bower_components/wow/dist/wow.min.js"></script>
+    <script type="text/javascript" src="app/bower_components/slick-carousel/slick/slick.js"></script>
+    <script type="text/javascript" src="app/bower_components/fancybox/dist/jquery.fancybox.min.js"></script>
+    <!-- endbuild -->
+    <!-- build:js build/app/js/main.min.js -->
+    <script type="text/javascript" src="app/js/main.js"></script>
+    <!-- endbuild -->
+    <!--slider script-->
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('.product-slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.product-slider-nav'
+        });
+        $('.product-slider-nav').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            asNavFor: '.product-slider',
+            dots: true,
+            swipe: true,
+            centerMode: true,
+            focusOnSelect: true,
+        });
+    });
+    </script>
+    <!--End slider script-->
+</body>
+
+</html>
